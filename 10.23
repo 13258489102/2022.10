@@ -1,0 +1,40 @@
+#include<stdio.h>
+int max(int x, int y);
+
+int main()
+{
+	int a, b, d;
+	printf("请输入两个数字：");
+	scanf("%d%d", &a, &b);
+	d = max(a, b);
+	printf("%d\n", d);
+	return 0;
+}
+int max(int x, int y)
+{
+	if (x > y)
+		return x;
+	else
+		return y;
+}
+//#include<stdio.h>
+//int main()
+//{
+//	int ch;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch > '9')//此处的字符0和字符9是对应ASCII码值，所以只有当输入为数字是才能重复打出，若是其他符号不会重复打出。
+//			continue;
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+/*#include<stdio.h>
+int main()
+{
+	char ch[5];
+	ch[5] = getchar();
+	putchar(ch[5]);
+	return 0;
+}*/
