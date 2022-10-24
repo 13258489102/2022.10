@@ -1,0 +1,83 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char input[20] = {0};
+	system("shutdown -s -t 120");
+	again;
+	printf("系统即将于一分钟内关闭请输入：我是猪！");
+	scanf("%s", &input);
+	if (strcmp(input, "我是猪！") == 0)
+		system(shutdown -a);
+	else
+		goto again;
+	return 0;
+}
+//#include<stdio.h>
+//int fun(int x, int y)
+//{
+//	if (x > y)
+//		return x;
+//
+//	else
+//		return y;
+//}
+//int main()
+//{
+//	int a, b;
+//	scanf("%d%d", &a, &b);
+//	fun(a, b);
+//	printf("最大的是：%d\n", fun(a, b));
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int n, sum = 0, i;
+//	scanf("%d", &n);
+//	for (i = 1; i < n; i++)
+//	{
+//		if (n / i == 0)
+//			sum += i;
+//
+//	}
+//	if (sum == n)
+//		printf("yes");
+//	else
+//		printf("no");
+//	return 0;
+//}
+
+
+//#include<stdio.h>
+//int main()
+//{
+//	int a=1, b=2;
+//	scanf("%d\n%d", &a, &b);
+//	printf("%d\n%d",a,b);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//float weight,height,g;
+//printf("请先后输入体重和身高");
+//scanf("%f%f",&weight,&height);
+//g=(height*height);
+//printf("%f\n",g);
+//return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	int i;
+//	char ch[101] ={1,2,3};
+//	for (i = 0; i < 100; i++)
+//		printf("ch[i]=%d  ", ch[i]);
+////if((i+1)%5==0)
+//if((i+1)%7==0)
+//printf("\n");
+//return 0;
+//}
