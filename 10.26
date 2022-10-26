@@ -1,0 +1,88 @@
+//#include<stdio.h>
+//int is_prine(int x)
+//{
+//	int i;
+//	for (i = 2; i < x; i++)
+//	{
+//		if (x % i == 0)
+//		
+//			return 0;
+//			//{
+//		/*	if (x % i == 0)
+//				return 0;
+//		}
+//		return 1;*/
+//			
+//		}return 1;
+//	}
+//	
+//
+//int main()
+//{
+//	int  n;
+//	for (n = 100; n<=200; n++)
+//	{
+//		
+//		if (is_prine(n)==1)
+//		
+//			printf("%d  ",n);
+//	}
+//	return 0;
+//}
+//#include<stdio.h>
+//void fun(int* pa, int* pb)
+//{
+//	int tmp;
+//	tmp = *pa;
+//	*pa = *pb;
+//	*pb = tmp;
+//}
+//
+//int main()
+//{
+//
+//	int a = 22, b = 34;
+//	fun(&a, &b);
+//		printf("%d%d", a, b);
+//	return 0;
+//}
+//#define _CRT_SECURE_NO_WARNINGS 1
+//#include<stdio.h>
+//int main()
+//{
+//	int a[5][5] = { 0 };
+//	int i;
+//	for (i = 0; i < 5; i++)
+//	{
+//		scanf("%d%d", &a[i][i]);
+//	}
+//	printf("%d%d", a[2][2]);
+//	return 0;
+//
+//}
+//
+
+//#include<stdio.h>
+//int main()
+//{
+//	/*int a = 5, b = 2;
+//	printf("%d", a / b);*/
+//	int arr1[] = { 0 }, n, i, tamp;
+//	printf("请输入数组的个数\n");
+//	scanf("%d", &n);
+//	printf("请输入%d个数字\n", n);
+//	for (i = 0; i <= (n - 1); i++)
+//		scanf("%d", arr1[i]);
+//	printf("%d", arr1[1]);
+//	/*for (i = 0; i < (n / 2); i++)
+//	{
+//		tamp = arr1[i];
+//		arr1[i] = arr1[n - 1 - i];
+//		arr1[n - 1 - i] = tamp;
+//	}
+//	
+//	for(i=0;i<n;i++)
+//	printf("%d", arr1[i]);*/
+//	return 0;
+//
+//}
