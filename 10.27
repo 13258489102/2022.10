@@ -1,0 +1,72 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int main()
+{
+	int i, n, array[50];
+	int a1 = 0, a2 = 0, a3 = 0;
+	printf("please input the number of electorates:(<50\n)");
+	scanf("%d", &n);
+	printf("请输入1或2或3来支持选票人！");
+	for (i = 0; i < n; i++)
+		scanf("%d", &array[i]);
+	for (i = 0; i < n; i++)
+	{
+		if (array[i == 1])
+			a1 += 1;
+		else if (array[i] == 2)
+			a2 += 1;
+		else
+			a3 += 1;
+
+	}
+	if (a1 > a2)
+	{
+		if (a1 > a3)
+			printf("the winer is a1");
+		else if (a1 < a3)
+			printf("the winer is a3");
+		else
+			printf("the winer is a1 and a3");
+	}
+	else if (a1 < a2)
+	{
+		if (a1 > a3)
+			printf("the winer is a1");
+		else if (a1 < a3)
+			printf("the winer is a3");
+		else
+			printf("the winer is a1 and a3");
+	}
+	else
+	{
+		if (a1 > a2)
+			printf("the winer is a1 and a3");
+		else if (a1 < a2)
+			printf("the winer is a2");
+		else
+			printf("no winer!please input again!");
+
+	}
+	return 0;
+}
+
+//#define _CRT_SECURE_NO_WARNINGS 1
+////#include<stdio.h>
+////void fun(int x)
+////{
+////	if (x > 9)
+////	{
+////		fun(x / 10);
+////	}
+////	printf("%d\n", x % 10);
+////}
+////int main()
+////{
+////	unsigned int num;
+////	scanf("%d",&num);
+////	fun(num);
+////	/*printf("hehe!");
+////	main();
+////	return 0;*/
+////	return 0;
+////}
