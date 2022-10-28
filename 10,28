@@ -1,0 +1,61 @@
+#define _CRT_SECURE_NO_WARNINGS 1
+#include<stdio.h>
+int fib(int n)
+{
+	int a=1, b=1, c = 1;
+	while (n >= 3)
+	{
+		c = a + b;
+		a = b;
+		b = c;
+		n--;
+	}
+	return c;
+}
+//int fib(int n)
+//{
+//	if (n <= 2)
+//		return 1;
+//	else
+//		return fib(n - 2) + fib(n - 1);
+//}
+int main()
+{
+	int a,n;
+	scanf("%d", &n);
+	a = fib(n);
+	printf("%d", a);
+	return 0;
+}
+//int fun1(int n)
+//{
+//	if (n > 1)
+//		return n * fun1(n - 1);
+//	else
+//		return 1;
+//	
+//}
+//int main()
+//{
+//	int n, red;
+//	scanf("%d", &n);
+//	red = fun1(n);
+//	printf("%d\n", red);
+//	return 0;
+//}
+//int fun(int n)
+//{
+//	int i,red=1;
+//	for (i = 1; i <= n; i++)
+//		red *= i;
+//	return red;
+//}
+//
+//int main()
+//{
+//	int n, red;
+//	scanf("%d", &n);
+//	red = fun(n);
+//	printf("%d\n", red);
+//	return 0;
+//}
